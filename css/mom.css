@@ -1,0 +1,78 @@
+/* Estilo general para la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilo para el título */
+.titulo {
+    margin: 2rem;
+    font-size: 2.5rem;
+    color: #ff6f91;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease;
+}
+
+/* Estilo para el botón */
+.contentbutton {
+    margin: 1rem;
+}
+
+.btn {
+    background-color: #ff6f91;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ff7890;
+}
+
+/* Estilo para el corazón animado */
+.heart {
+    position: relative;
+    margin: 2rem;
+}
+
+.hearanimated {
+    width: 150px;
+    height: auto;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s ease;
+}
+
+.hearanimated:hover {
+    transform: scale(1.2);
+}
+
+/* Animación de pulso del corazón */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Animación de desvanecimiento para el título */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
